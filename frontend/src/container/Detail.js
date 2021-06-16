@@ -70,7 +70,7 @@ class Detail extends React.Component {
               color="white"
             >
               <Heading size="md" color="midnight">
-                Title: {location.state.title}
+                {location.state.title}
               </Heading>
             </Box>
             <Box height={50}></Box>
@@ -133,7 +133,10 @@ class Detail extends React.Component {
                   </Text>
                 </Table.Cell>
                 <Table.Cell>
-                  <Text>{location.state.meeting_date.substring(0, 10)}</Text>
+                  <Text>
+                    {location.state.meeting_date.substring(0, 10)}{" "}
+                    {location.state.meeting_date.substring(11, 16)}
+                  </Text>
                 </Table.Cell>
               </Table.Row>
             </Table>

@@ -23,3 +23,4 @@ def resultCreate(request):
 class MeetingViewSet(viewsets.ModelViewSet): 
     queryset = Meeting.objects.all() 
     serializer_class = MeetingSerializer
+

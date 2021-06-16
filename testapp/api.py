@@ -4,9 +4,11 @@ from .serializer import MeetingSerializer
 from .serializer import ResultSerializer
 from .models import Meeting, Result
 
+
 # class MeetingApi(generics.ListAPIView):
-#     queryset = Meeting.objects.all()
+#    queryset = Meeting.objects.all()
 #     serializer_class = MeetingSerializer
+
 
  
 # class MeetingCreateApi(generics.CreateAPIView):
