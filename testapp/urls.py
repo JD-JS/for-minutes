@@ -12,10 +12,7 @@ urlpatterns = [
         'post': 'create'
     })),
     path('meeting/<int:pk>', MeetingViewSet.as_view({
-        'get': 'retrieve',
-        'put': 'update',
-        'patch': 'partial_update'
-    })),
+
     path('meeting/<int:pk>/delete', MeetingViewSet.as_view({
         'delete': 'destroy'
     })),
@@ -31,5 +28,6 @@ urlpatterns = [
         'put': 'update',
         'patch': 'partial_update'
     })),
+
 ]
 
