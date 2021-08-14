@@ -23,6 +23,7 @@ class ResultViewSet(viewsets.ModelViewSet):
     def create(self,request,pk):
         meeting = get_object_or_404(Meeting, pk=pk)
         result = Result()
+        meeting = get_object_or_404(Meeting, pk=request.POST.get('pk', 1))
         audio = "media/"+str(meeting.file)
         
         res = ClovaSpeechClient().req_upload(file=audio, completion='sync')
@@ -37,17 +38,4 @@ class ResultViewSet(viewsets.ModelViewSet):
         result.keyword = word
         result.meeting = meeting
         result.save()
-        return redirect('/testapp/result/' + str(meeting.id))
-
-
-    # def keyword_create(self,request,pk):
-    #     meeting = get_object_or_404(Meeting, pk=pk)
-    #     result = Result()
-        
-    #     texts = Result.objects.select_related('script').get(pk=pk)
-    #     res = Krwordrank(texts)
-
-    #     result.keywords = res.words
-    #     result.meeting = meeting
-    #     result.save()
-    #     return redirect('/testapp/result/' + str(meeting.id))
+        return redirect('/minute/' + str(meeting.id))

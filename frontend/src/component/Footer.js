@@ -6,51 +6,36 @@ const Footer = () => (
   <footer class="footer-dark">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-3 item">
-          <h3>Services</h3>
+        <div class="col-sm-9 col-md-3 item">
+          <h3>Home</h3>
           <ul>
             <li>
-              <a href="#!">Web design</a>
+              <a href="#!">Information</a>
             </li>
             <li>
-              <a href="#!">Development</a>
+              <a href="#!">Contact us</a>
             </li>
-            <li>
-              <a href="#!">Hosting</a>
-            </li>
+            
           </ul>
         </div>
         <div class="col-sm-6 col-md-3 item">
-          <h3>About</h3>
+          <h3>About Us</h3>
           <ul>
             <li>
-              <a href="#!">Company</a>
+              <a href="#!">Project</a>
             </li>
             <li>
               <a href="#!">Team</a>
             </li>
             <li>
-              <a href="#!">Careers</a>
+              <a href="#!">Plan</a>
             </li>
           </ul>
         </div>
+        
         <div class="col-md-6 item text">
           <h3>For Minutes</h3>
           <p>"For Minutes" is summary minutes service.</p>
-        </div>
-        <div class="col item social">
-          <a href="#!">
-            <i class="icon ion-social-facebook"></i>
-          </a>
-          <a href="#!">
-            <i class="icon ion-social-twitter"></i>
-          </a>
-          <a href="#!">
-            <i class="icon ion-social-snapchat"></i>
-          </a>
-          <a href="#!">
-            <i class="icon ion-social-instagram"></i>
-          </a>
         </div>
       </div>
       <p class="copyright">For-Minutes © 2021</p>

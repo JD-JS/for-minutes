@@ -80,11 +80,7 @@ body {
   font-size: 0.9rem !important;
 }
 
-body {
-    
-    background-color: #eef5ff;
-    background-image: linear-gradient(135deg, #eef5ff 0%, #eef5ff 100%);
-}
+
 
 .header__logo {
   width: 3rem;

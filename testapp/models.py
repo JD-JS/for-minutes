@@ -11,7 +11,14 @@ class Meeting(models.Model):
     date = models.DateTimeField(auto_now=True)
     file = models.FileField(upload_to='audio/')
     photo = models.ImageField(upload_to='photo/', null=True, blank=True)
-    
+
+    # result = models.OneToOneField(
+    #     Result,
+    #     on_delete=models.CASCADE,
+    #     primary_key=True,
+    #     blank=True
+    # )
+
     def __str__(self):
         return self.title #자기 자신을 title로 표현
 

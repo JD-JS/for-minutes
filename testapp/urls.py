@@ -23,7 +23,7 @@ urlpatterns = [
     path('result', ResultViewSet.as_view({
         'get': 'list'
     })),
-    path('result/create/<int:pk>', ResultViewSet.as_view({
+    path('result/<int:pk>/create', ResultViewSet.as_view({
         'post': 'create'
     })),
     path('result/<int:pk>', ResultViewSet.as_view({

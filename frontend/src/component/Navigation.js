@@ -1,60 +1,59 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import { Heading, Text,Link,Table} from "gestalt";
+import { Heading, Text,Link,Table,Box} from "gestalt";
 import "gestalt/dist/gestalt.css";
 import './Navigation.css';
+import logo from "../images/fmlogo.png";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams,
+} from "react-router-dom";
+import { Navbar,Nav,NavDropdown,Form,FormControl,Button ,Dropdown,DropdownButton} from 'react-bootstrap'
 
 
 
 const Navigation = () => {
   return (
-    <Text align="center" color="navy">
-      <Heading size="samll" color="navy">
-     
-      <div className="navigation"> 
-      
-      
-      {/* <Link href="/" hoverStyle= 'none' tapStyle= 'compress'> Home </Link>
-      <Link href="/minutes" hoverStyle= 'none' tapStyle= 'compress'> MinutesList </Link>
-      <Link href="/post" hoverStyle= 'none' tapStyle= 'compress'> Post </Link> */}
-      
-      <Table.Row>
-      <Table.Cell>
-        <Link href="/"  hoverStyle= "none" tapStyle= 'compress'> Home </Link>
-      </Table.Cell>
-      <Table.Cell>
-      <Link href="/minutes" hoverStyle= "none" tapStyle= 'compress'> MinutesList </Link>
-      </Table.Cell>
-      <Table.Cell>
-      <Link href="/post" hoverStyle= "none" tapStyle= 'compress'> Post </Link>
-      </Table.Cell>
-     
-    </Table.Row>
-      </div>
- 
-      </Heading>
-      </Text>
-    // <html>
-      
-    // <body>
-    //     <div>
-    //         <div class="header-dark">
-    //             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-    //                 <div class="container"><a class="navbar-brand" href="/"></a><img src={logo} width='8%'/><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-    //                     <div class="collapse navbar-collapse"
-    //                         id="navcol-1">
-    //                         <ul class="nav navbar-nav">
-    //                             <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home</a></li>
-    //                             <li class="nav-item" role="presentation"><a class="nav-link" href="/minutes">MinutesList</a></li>
-    //                             <li class="nav-item" role="presentation"><a class="nav-link" href="/post">Post</a></li>
-    //                         </ul>
-    //                         </div>
-    //                         </div>
-    //             </nav>
-    //             </div>
-    //             </div>
-    //             </body>
-    // </html>
+    <div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <Router>
+                            <Navbar bg="white" variant="light" expand="lg" sticky="top" >
+                                <Navbar.Brand href="/">
+                                <img
+                                    alt=""
+                                    src={logo}
+                                    width="30"
+                                    height="30"
+                                    className="d-inline-block align-top"
+                                    />{' '}
+                                    </Navbar.Brand>
+                                    <Navbar.Text>For minutes</Navbar.Text>
+                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end navalign" >
+                                <Navbar.Text>
+                                    <Nav className="mr-auto">
+                                    <Nav.Link href="/">Home</Nav.Link>
+                                    <Nav.Link href="/about">About Us</Nav.Link>
+                                    <NavDropdown align="end" title="My" id="collasible-nav-dropdown">
+                                        <NavDropdown.Item href="/minutes">MinutesList</NavDropdown.Item>
+                                        <NavDropdown.Item href="/post">Post</NavDropdown.Item>
+                                        
+                                    </NavDropdown>
+                                    
+                                    </Nav>
+                                    </Navbar.Text>
+                                </Navbar.Collapse>
+                            </Navbar>
+                            <br />
+                        </Router>
+                    </div>
+                </div>
+            </div>
+    
     
   );
 };

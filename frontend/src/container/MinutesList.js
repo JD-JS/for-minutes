@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import Navigation from "../component/Navigation";
 
 import { Table, Text, Box } from "gestalt";
 import "gestalt/dist/gestalt.css";
@@ -27,12 +28,10 @@ class MinutesList extends Component {
   }
   render() {
     const { results } = this.state;
-    console.log("this.state:", this.state);
-    console.log("results: ", results);
 
     return (
       <div class="bg wrapper">
-        <Header />
+        <Navigation />
         <div class="main-content">
           <Box padding={10}>
             <Table>
@@ -61,6 +60,7 @@ class MinutesList extends Component {
                       date={result.date}
                       meeting_date={result.meeting_date}
                       file={result.file}
+                      image={result.photo}
                     />
                   );
                 })}
