@@ -7,7 +7,7 @@ import CardItem from "../Cards/CardItem";
 import OH_1 from "../../images/OH_1.jpg";
 import OH_2 from "../../images/OH_2.jpg";
 import OH_3 from "../../images/OH_3.PNG";
-import OH_6 from "../../images/OH_6.jpg";
+import OH_6 from "../../images/OH_62.jpg";
 import PI_1 from "../../images/PI_1.PNG";
 import PI_2 from "../../images/PI_2.PNG";
 import PI_3 from "../../images/PI_3.png";
@@ -19,7 +19,7 @@ import T_JJ from "../../images/T_JJ.jpg";
 import T_HY from "../../images/T_HY.jpg";
 import T_TR from "../../images/T_TR.jpg";
 import T_SJ from "../../images/T_SJ.jpg";
-import JDJS from "../../images/JDJS.jpg";
+import JDJS from "../../images/JDJS2.jpg";
 import Aug from "../../images/8888.jpg";
 
 const About = () => {

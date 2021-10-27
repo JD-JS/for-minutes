@@ -9,7 +9,7 @@ import M_history from "../../images/M_history.PNG";
 import M_contact from "../../images/M_contact.PNG";
 import M_fv from "../../images/M_fv.PNG";
 import M_post from "../../images/M_post.PNG";
-import M_team from "../../images/M_team.PNG";
+import M_team from "../../images/M_team2.PNG";
 import M_participate from "../../images/M_participate.PNG";
 import M_ml from "../../images/M_ml.PNG";
 import M_footer from "../../images/M_footer.PNG";
