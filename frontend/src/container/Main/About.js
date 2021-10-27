@@ -10,7 +10,7 @@ import OH_3 from "../../images/OH_3.PNG";
 import OH_6 from "../../images/OH_62.jpg";
 import PI_1 from "../../images/PI_1.PNG";
 import PI_2 from "../../images/PI_2.PNG";
-import PI_3 from "../../images/PI_3.png";
+import PI_3 from "../../images/PI_32.png";
 import HY from "../../images/HY.png";
 import JJ from "../../images/JJ.jpg";
 import TL from "../../images/TL.jpg";
