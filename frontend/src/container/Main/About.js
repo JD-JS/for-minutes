@@ -20,7 +20,7 @@ import T_HY from "../../images/T_HY.jpg";
 import T_TR from "../../images/T_TR.jpg";
 import T_SJ from "../../images/T_SJ.jpg";
 import JDJS from "../../images/JDJS.jpg";
-import Aug from "../../images/888.jpg";
+import Aug from "../../images/8888.jpg";
 
 const About = () => {
   useEffect(() => {
